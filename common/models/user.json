@@ -1,0 +1,42 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "favouritesRecipesIds": {
+      "type": [
+        "number"
+      ]
+    },
+    "shoppingListIngredientsIds": {
+      "type": [
+        "number"
+      ]
+    },
+    "calendarEvents": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
